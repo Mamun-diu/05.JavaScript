@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+        outline:0;
+      }
+      body{
+        font-family: arial;
+        font-size:18px;
+        color : #444;
+        line-height: 25px;
+      }
+      .content{
+        background : #f0f0f0;
+        width : 800px;
+        margin : 0 auto;
+      }
+      .maincontent{
+        background : #fff;
+        margin : 10px;
+        min-height : 400px;
+        padding : 5px 10px;
+      }
+      .header, .footer{
+        padding : 10px;
+        text-align: center;
+        background : #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="content">
+      <div class="header">
+        <h2>
+          <script type="text/javascript">
+            document.write("Tutorial: JavaScript Fundamentals");
+          </script>
+        </h2>
+      </div>
+      <div class="maincontent">
+
+        <script type="text/javascript">
+          var arr1 = [1,2,3,4];
+          var arr2 = [3,4,5,6];
+          var getarr = arr1.concat(arr2);
+          document.write(getarr+"<br>");
+
+          var color = ["Green","Blue","Purple","Red"];
+          document.write("Before Sorting : "+color+"<br>");
+          color.sort();
+          document.write("After Sorting : "+color+"<br>");
+
+          var number = [10,1020,50,30,80,70,35];
+          document.write("Before Sorting : "+number+"<br>");
+
+          function arrSort(x,y){
+            return(y-x);
+          }
+          number.sort(arrSort);
+          document.write("After Sorting : "+number+"<br>");
+          document.write("Array Length : "+number.length+"<br>");
+
+
+        </script>
+      </div>
+      <div class="footer">
+        <h2>
+          <script type="text/javascript">
+            document.write("Project with Developer Mamun");
+          </script>
+        </h2>
+      </div>
+    </section>
+
+
+  </body>
+</html>
