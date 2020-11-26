@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Type Conversion</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    var str = '100';
+    var n = 10;
+    console.log(Number.parseInt(str)+10);
+    console.log(String(n)+str);
+    console.log(n.toString()+str);
+
+    console.log(Boolean(Infinity)); //true
+
+    console.log(Boolean('')); //false
+    console.log(Boolean('hello')); //true
+    console.log(Boolean(null)); //false
+    console.log(Boolean(undefined)); //false
+    console.log(Boolean(0)); //false
+    console.log(Boolean(345)); //true
+    var x = true;
+    console.log(x.toString());
+
+    var u = 33;
+    var z = Number.parseInt(u).toString();
+    if(z == 'NaN'){
+      console.log("It's not a number");
+    }else{
+      console.log("It's a number");
+    }
+  </script>
+  </body>
+</html>
