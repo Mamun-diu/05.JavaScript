@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object Literal vs Constructor</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    // var obj = {}
+    // obj.x = 10;
+    // console.log(typeof obj);
+    // console.log(obj);
+
+    // Object Literal
+    var point = {
+      x: 10,
+      y: 20
+    }
+    // point.y = 30;
+    point.z = 30;
+    console.log(point);
+
+    //Object Constructor
+    var obj1 = Object();
+    obj1.a = 10;
+    console.log(obj1);
+    var obj2 = new Object();
+    obj2.b = 20;
+    console.log(obj2);
+  </script>
+  </body>
+</html>
