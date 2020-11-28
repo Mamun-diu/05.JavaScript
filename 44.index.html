@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Remove Object Properties</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    var point = {
+      x: 10,
+      y: 20,
+      z: 15
+    }
+    point.a = 16;
+    point.x = 45;
+    console.log(point);
+
+    point['y'] = 100;
+    var prop = 'z';
+    point[prop] = 55;
+    console.log(point);
+
+
+    //Remove Object Properties
+
+    delete(point.a);
+    console.log(point);
+  </script>
+  </body>
+</html>
