@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Return Function</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    function addAll(){
+      var sum = 0;
+      for(var i = 0; i< arguments.length; i++){
+        sum += arguments[i];
+      }
+      return sum;
+    }
+    console.log(addAll(10,30));
+
+    function person(name, email){
+      return {
+        name: name,
+        email: email
+      }
+    }
+    var p1 = person('Al Mamun','mamun@gmail.com');
+    console.log(p1);
+
+  </script>
+  </body>
+</html>
