@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function Expression</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    var addition = function(a,b){
+      return a+b;
+    }
+    console.log(addition(10,40));
+
+    setTimeout(function(){
+      console.log('I will call after 2 second');
+    },2000);
+
+    var another = addition;
+
+    console.log(another(10,20));
+
+  </script>
+  </body>
+</html>
