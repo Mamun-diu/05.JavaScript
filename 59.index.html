@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Foreach Implementation</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+    var arr = [1,2,3,4,5];
+    // var sum = 0;
+    // arr.forEach((value, i) => {
+    //   sum += value;
+    // });
+    // console.log(sum);
+
+    function forEach(arr, cb){
+      for (var i = 0; i < arr.length; i++) {
+        cb(arr[i],i,arr)
+      }
+    }
+
+    var sum = 0;
+    forEach(arr, function(value, index, arr){
+      console.log(value, index, arr);
+      sum += value
+    });
+
+    console.log(sum);
+
+
+
+
+
+  </script>
+  </body>
+</html>
