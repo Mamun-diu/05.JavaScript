@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pure Function</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    //It is a pure function
+    function sqr(n){
+      return n*n;
+    }
+    console.log(sqr(2));
+    console.log(sqr(2));
+    console.log(sqr(2));
+
+    var n = 10;
+    // It's not a pure function
+    function change (){
+      n = 100;
+    }
+    change();
+
+    console.log(n);
+
+    var point = {
+      x:45,
+      y:30
+    }
+    // It's not a pure function
+    function printPoint(point){
+      point.x = 100;
+      point.y = 200;
+      console.log(point);
+    }
+
+    printPoint(point);
+    console.log(point);
+
+
+
+  </script>
+  </body>
+</html>
