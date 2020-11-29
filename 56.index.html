@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Higher Order Function</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+  function add(a, b){
+    return a + b;
+
+  }
+
+  function manipulate(a,b, func){
+    var c = a + b;
+    var d = a - b;
+
+    function multiply(){
+      var m = func(a,b);
+      return c*d*m;
+    }
+    return multiply
+  }
+
+  var multiply = manipulate(3,4,add);
+  console.log(multiply());
+
+
+
+  </script>
+  </body>
+</html>
