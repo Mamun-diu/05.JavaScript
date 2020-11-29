@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inner Function</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    function something(great, name){
+      function getFirstName(){
+        if(name){
+          return name.split(' ')[0];
+        }else{
+          return '';
+        }
+      }
+      var message = great + ' ' + getFirstName();
+      console.log(message);
+    }
+    something('hi','Al Mamun');
+
+  </script>
+  </body>
+</html>
