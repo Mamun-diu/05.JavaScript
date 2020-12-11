@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Closure</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+    // function test(){
+    //   var msg = 'I am Learning Lexical Scope and Closure';
+    //
+    //   function sayMsg(){
+    //     console.log(msg);
+    //   }
+    //   sayMsg()
+    // }
+    //
+    // test();
+
+    function test(){
+      var msg = 'I am Learning Lexical Scope and Closure';
+
+      return function (){
+        console.log(msg);
+      }
+
+    }
+
+    var sayMsg = test();
+    sayMsg();
+
+
+
+
+
+
+  </script>
+  </body>
+</html>
