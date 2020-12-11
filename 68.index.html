@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Closure and Loops</title>
+
+  </head>
+  <body>
+
+  <script type="text/javascript">
+
+    for (var i = 1; i <= 5; i++){
+      (function(n){
+        setTimeout(function(){
+        console.log(n);
+      },1000 * i)
+    })(i);
+    }
+
+
+
+
+
+
+  </script>
+  </body>
+</html>
