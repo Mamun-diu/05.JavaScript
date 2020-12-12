@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Factory Pattern in javascript</title>
+
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <script type="text/javascript">
+
+      var createRect = function(width, height){
+        return {
+          width: width,
+          height: height,
+          draw: function(){
+            console.log('I am a rectangle');
+            this.printProperties();
+            console.log(this);
+          },
+          printProperties: function(){
+            console.log("My width is "+ this.width);
+            console.log("My Height is "+ this.height);
+          }
+        }
+      }
+
+      var rect1 = createRect(10,8);
+      rect1.draw();
+
+      var rect2 = createRect(40,30);
+      rect2.draw();
+
+
+    </script>
+  </body>
+</html>
