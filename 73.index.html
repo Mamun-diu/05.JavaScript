@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Keyword in javascript</title>
+
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <script type="text/javascript">
+
+
+      var Rectangle = function(width, height){
+        this.width = width
+        this.height = height
+        this.draw = function(){
+          console.log('I am a rectangle');
+          this.printProperties();
+          console.log(this);
+        }
+        this.printProperties = function(){
+          console.log("My width is "+ this.width);
+          console.log("My Height is "+ this.height);
+        }
+      }
+
+      // var rect3 = new Rectangle(10,20);
+      // rect3.draw();
+
+      function myNew(constructor){
+        var obj = {};
+        Object.setPrototypeOf(obj, constructor.prototype);
+        var argsArray = Array.prototype.slice.apply(arguments);
+        constructor.apply(obj, argsArray.slice(1))
+        return obj;
+      }
+
+      var rect4 = myNew(Rectangle,45,30)
+
+      rect4.draw();
+
+    </script>
+  </body>
+</html>
