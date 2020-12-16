@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Symbols in javascript</title>
+
+  </head>
+  <body>
+    <h1>Symbols</h1>
+    <script type="text/javascript">
+      let s1 = Symbol();
+      let s2 = Symbol('test symbol');
+
+      // console.log(s1, s2);
+      console.log(s1 === s2);
+
+      let toss = {
+        HEAD: Symbol('HEAD'),
+        TAIL: Symbol('Tail')
+      }
+
+      console.log(toss.HEAD);
+
+    </script>
+  </body>
+</html>
