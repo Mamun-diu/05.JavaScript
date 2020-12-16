@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Class in javascript</title>
+  </head>
+  <body>
+    <h1>Class</h1>
+    <script type="text/javascript">
+
+      class Rectangle {
+        constructor(width,height){
+          this.width = width;
+          this.height = height;
+        }
+        draw(){
+          console.log('Drawing...');
+        }
+      }
+
+      let rect1 = new Rectangle(45,23);
+      console.log(typeof Rectangle);
+
+
+    </script>
+  </body>
+</html>
