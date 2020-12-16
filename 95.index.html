@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Throwing an Error in javascript</title>
+  </head>
+  <body>
+    <h1>Throwing an Error</h1>
+    <script type="text/javascript">
+
+      try{
+        console.log('I am line 1');
+        throw new Error("I am Your Error");
+        console.log('I am line 2');
+        console.log('I am line 3');
+      }catch(e){
+        console.log(e.message);
+      }
+
+    </script>
+  </body>
+</html>
