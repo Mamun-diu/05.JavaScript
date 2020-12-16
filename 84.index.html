@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object from entries in javascript</title>
+
+  </head>
+  <body>
+    <h1>Object from entries</h1>
+    <script type="text/javascript">
+      var obj = {
+        a:10,
+        b:20
+      }
+      console.log(Object.entries(obj));
+
+      var objArr = [
+        ['a', 10],
+        ['b',20]
+      ]
+      console.log(Object.fromEntries(objArr));
+
+    </script>
+  </body>
+</html>
