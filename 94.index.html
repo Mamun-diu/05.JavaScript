@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Error Handling with Try Catch in javascript</title>
+  </head>
+  <body>
+    <h1>Error Handling with Try Catch</h1>
+    <script type="text/javascript">
+
+      function makeWords(text){
+        // let str = text.trim();
+        // let words = str.split(' ');
+        // return words;
+        try{
+          let str = text.trim();
+          let words = str.split(' ');
+          return words;
+        }catch(e){
+          // console.log(e.message);
+          return "Please provide a valid text";
+        }
+      }
+
+      // let words = makeWords("hello hi");
+      // console.log(words);
+
+      let words = makeWords(86);
+      console.log(words);
+
+    </script>
+  </body>
+</html>
