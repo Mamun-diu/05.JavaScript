@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Destructuring in javascript</title>
+
+  </head>
+  <body>
+    <h1>Destructuring</h1>
+    <script type="text/javascript">
+      let person = {
+        name: 'Mamun',
+        email: 'mamun@gmail.com',
+        address: {
+          city: 'Dhaka',
+          country: 'Bangladesh'
+        }
+      }
+      let {name, email, address:{city,country}} = person
+      console.log(name,email,city,country);
+
+    </script>
+  </body>
+</html>
