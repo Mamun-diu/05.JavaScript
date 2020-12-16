@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Set in javascript</title>
+  </head>
+  <body>
+    <h1>Set</h1>
+    <script type="text/javascript">
+
+      // let set = new Set([1,2,3])
+      let set = new Set([1,2,3])
+      set.add(5);
+      set.add(6);
+      set.add(1);
+      set.add(2);
+      console.log(set);
+      console.log(set.size);
+      // set.clear();
+      // set.delete(5);
+      console.log(set.has(5));
+      console.log(set.keys());
+      console.log(set.values());
+
+      let keyIterate = set.keys();
+      console.log(keyIterate.next());
+
+
+    </script>
+  </body>
+</html>
