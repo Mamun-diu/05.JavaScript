@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Static Method in javascript</title>
+  </head>
+  <body>
+    <h1>Class</h1>
+    <script type="text/javascript">
+
+      class Person {
+        constructor(name,email){
+          this.name = name;
+          this.email = email;
+        }
+        print(){
+          console.log(this.name, this.email);
+        }
+
+        static create(str){
+          let person = JSON.parse(str);
+          return new Person(person.name, person.email)
+        }
+      }
+
+      let str = '{"name":"Al-Mamun","email":"mamun@gmail.com"}';
+      let p1 = Person.create(str);
+      console.log(p1);
+      console.log(p1 instanceof Person);
+      p1.print();
+
+
+
+
+    </script>
+  </body>
+</html>
