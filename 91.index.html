@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inheritance in javascript</title>
+  </head>
+  <body>
+    <h1>Inheritance</h1>
+    <script type="text/javascript">
+
+      class Shape{
+        constructor(color){
+          this.color = color;
+        }
+        draw(){
+          console.log('Drawing...');
+        }
+      }
+
+      class Rectangle extends Shape{
+        constructor(color,width, height){
+          super(color)
+          this.width = width;
+          this.height = height;
+        }
+        calculate(){
+          return this.width + this.height;
+        }
+      }
+
+      let r = new Rectangle('green',4,5);
+      console.log(r);
+      r.draw();
+
+    </script>
+  </body>
+</html>
