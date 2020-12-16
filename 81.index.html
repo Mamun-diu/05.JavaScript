@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rest and Spread Operator in javascript</title>
+
+  </head>
+  <body>
+    <h1>Rest and Spread Operator</h1>
+    <script type="text/javascript">
+
+      // function sum(){
+      //   let sum = 0;
+      //
+      //   for (let i = 0; i< arguments.length; i++){
+      //     sum += arguments[i]
+      //   }
+      //   return sum
+      // }
+      //
+      // console.log(sum(1,2,3,4,5));
+
+      function sum(...rest){
+        return rest.reduce((a,b) => a+b)
+      }
+
+      console.log(sum(1,2,3,4,5));
+
+      let a = [1,2,3];
+      console.log(...a);
+
+      let obj = {
+        a:10,
+        b:20,
+        c:30
+      }
+
+      let obj2 ={
+        ...obj
+      }
+      console.log(obj2);
+
+    </script>
+  </body>
+</html>
