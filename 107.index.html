@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Box Event in DOM Manipulation in JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="text-center my-3">Input Box Event in DOM Manipulation on DOM Element</h1>
+      <div class="form-group">
+        <label for="">What is Your Name</label>
+        <input id="name" class="form-control" type="text" name="" value="" placeholder="Enter name">
+        <h2 class="name"></h2>
+      </div><br><br>
+      Choose Your Skills <br>
+      <div class="form-check">
+        <input id="gridCheck1" class="form-check-input" type="checkbox" name="" value="C Programming">
+        <label for="gridCheck1">C Programming</label>
+      </div>
+      <div class="form-check">
+        <input id="gridCheck2" class="form-check-input" type="checkbox" name="" value="Java Programming">
+        <label for="gridCheck2">Java Programming</label>
+      </div>
+      <div class="form-check">
+        <input id="gridCheck3" class="form-check-input" type="checkbox" name="" value="JavaScript">
+        <label for="gridCheck3">JavaScript</label>
+      </div>
+      <div class="form-check">
+        <input id="gridCheck4" class="form-check-input" type="checkbox" name="" value="Python">
+        <label for="gridCheck4">Python</label>
+      </div>
+
+      <h2 class="box"></h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      let name = document.getElementById('name');
+      let check1 = document.getElementById('gridCheck1');
+      let check2 = document.getElementById('gridCheck2');
+      let check3 = document.getElementById('gridCheck3');
+      let check4 = document.getElementById('gridCheck4');
+
+      name.addEventListener('keypress',function(e){
+        if(e.key ==='Enter'){
+          document.getElementsByClassName('name')[0].innerHTML =e.target.value;
+          e.target.value = '';
+        }
+
+      });
+      
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
